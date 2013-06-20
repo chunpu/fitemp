@@ -2,7 +2,7 @@
 
 Simple Use
 -----
-    ```html
+```html
     <ul>
     <%  for(var i = 0; i < year.length; i++){ %>
         <li>Happy <%year[i]%> Year!</li>
@@ -15,16 +15,18 @@ Simple Use
     var result = tpl.render(id,{
       year:	['Shu','Niu','Hu','Tu','Long','She','Ma','Yang','Hou','Ji','Gou','Zhu']
     });
-    ```
+```
 
 Features
 --------
     
 ### include
 
+```html
     <div class="parent">
       <%=include('son.html', {[[params..]})%>
     </div>
+```
 
 > use filename to change include relative path to absolute path(just like ejs)
 
@@ -54,7 +56,7 @@ Installation by npm
 In HTML
 ------
 
-	  <script src="./fitemp.js"></script>
+    <script src="./fitemp.js"></script>
 
 	
 
